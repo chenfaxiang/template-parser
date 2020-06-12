@@ -1,6 +1,6 @@
 {
   "name": "template-parse",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "纯js完成一个模板解析功能，即市面上NB的模板引擎！",
   "main": "index.js",
   "author": "chenfx",
