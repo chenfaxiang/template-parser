@@ -1,0 +1,24 @@
+{
+  "name": "purejs-template-parser",
+  "version": "0.0.3",
+  "description": "纯js完成一个模板解析功能，即市面上NB的模板引擎！",
+  "main": "dist/index.js",
+  "author": "chenfx",
+  "license": "MIT",
+  "gitHead": "5359e9d8024546b7b2a6ee7ddcf39c6030e885ad",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build:cjs": "rollup -c config/rollup.config.js",
+    "build": "npm run clean && npm run build:cjs"
+  },
+  "keywords": [
+    "purejs-template-parser",
+    "js"
+  ],
+  "devDependencies": {
+    "typescript": "^3.9.5",
+    "rollup": "^2.15.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "rimraf": "^3.0.2"
+  }
+}
