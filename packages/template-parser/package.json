@@ -1,6 +1,6 @@
 {
   "name": "purejs-template-parser",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "纯js完成一个模板解析功能，即市面上NB的模板引擎！",
   "main": "dist/index.js",
   "author": "chenfx",
@@ -16,9 +16,9 @@
     "js"
   ],
   "devDependencies": {
-    "typescript": "^3.9.5",
+    "rimraf": "^3.0.2",
     "rollup": "^2.15.0",
     "rollup-plugin-typescript2": "^0.27.1",
-    "rimraf": "^3.0.2"
+    "typescript": "^3.9.5"
   }
 }
