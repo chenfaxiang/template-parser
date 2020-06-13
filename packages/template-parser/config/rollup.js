@@ -2,12 +2,12 @@
  * @Description: rollup 打包工具的基础配置
  * @Author: chenfx
  * @Date: 2020-06-12 19:51:58
- * @LastEditTime: 2020-06-12 20:06:35
+ * @LastEditTime: 2020-06-13 20:59:39
  */ 
 const typescriptPkg = require('rollup-plugin-typescript2')
 const pkg = require('../package.json')
 const version = pkg.version
-const name = 'purejs template'
+const name = 'purejsTemplateParser'
 
 /**
  * 编译时显示的横幅信息

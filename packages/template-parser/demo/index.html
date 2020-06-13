@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>纯js的模板引擎 demo</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id='prejs-template-demo-container'></div>
+
+  <!-- 当前页面引入一个js文件，js文件里面导入 umd 格式的包文件，需要先将 require 包引入，代码如下 -->
+  <!-- <script src='./requirejs/require.js'></script>
+  <script src="./index.js"></script> -->
+  <!-- 所有代码在页面上直接使用 umd 格式的包，代码如下 -->
+  <script src='../dist/index.js'></script>
+  <script>
+    purejsTemplateParser()
+  </script>
+</body>
+</html>
