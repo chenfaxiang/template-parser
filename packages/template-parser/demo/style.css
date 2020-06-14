@@ -3,3 +3,17 @@
   height: 100%;
   background: #f66;
 }
+.demo-container-img {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+.img-info {
+  display: block;
+  width: 300px;
+  height: auto;
+}
+.img-desc {
+  font-size: 14px;
+  color: #333;
+}

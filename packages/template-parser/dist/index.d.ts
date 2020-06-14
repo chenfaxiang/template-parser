@@ -1,1 +1,1 @@
-export default function purejsTemplateParser(): void;
+export default function purejsTemplateParser(html: any, options: any): any;

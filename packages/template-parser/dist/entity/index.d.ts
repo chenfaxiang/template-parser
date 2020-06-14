@@ -1,0 +1,3 @@
+interface IPurejsTemplateParser {
+}
+export { IPurejsTemplateParser };
