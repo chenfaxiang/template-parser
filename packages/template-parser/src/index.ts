@@ -6,6 +6,11 @@ export default function purejsTemplateParser(html, options) {
   let code = 'var r=[];\n',
     cursor = 0
 
+  /**
+   * 处理模板中的变量，将变量进行截取求值
+   * @param line 当前需要处理的字符
+   * @param js 是否是需要直接在 new Function 执行的 js
+   */
   const add = function (line, js) {
     js ? (code += line.match(reExp) ? line + '\n' : 'r.push(' + line + ');\n') :
       (code += line != '' ? 'r.push("' + line.replace(/"/g, '\\"') + '");\n' : '')
