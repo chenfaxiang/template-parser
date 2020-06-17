@@ -1,6 +1,9 @@
-import { IPurejsTemplateParser } from './entity/index'
-
-export default function purejsTemplateParser(html, options) {
+/**
+ * 模板解析器方法
+ * @param html 传入的 html 字符串
+ * @param options 需要替换 html 字符串里面的变量参数
+ */
+function purejsTemplateParser(html, options) {
   const reg = /<%=([^%>]+)?%>/g,
     reExp = /(^( )?(if|for|else|switch|case|break|{|}))(.*)?/g
   let code = 'var r=[];\n',
@@ -27,3 +30,5 @@ export default function purejsTemplateParser(html, options) {
 
   return new Function(code.replace(/[\r\t\n]/g, '')).apply(options);
 }
+
+export default purejsTemplateParser;

@@ -7,6 +7,7 @@
   "license": "MIT",
   "gitHead": "5359e9d8024546b7b2a6ee7ddcf39c6030e885ad",
   "scripts": {
+    "test": "mocha",
     "clean": "rimraf ./dist",
     "build:cjs": "rollup -c config/rollup.config.js",
     "build": "npm run clean && npm run build:cjs"
@@ -19,6 +20,7 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.15.0",
     "rollup-plugin-typescript2": "^0.27.1",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.5",
+    "mocha": "^8.0.1"
   }
 }
